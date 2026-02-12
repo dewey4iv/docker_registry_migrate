@@ -26,6 +26,8 @@ async fn main() -> Result<(), BoxedError> {
 
     migrate(&config, &mut log).await?;
 
+    println!("done.");
+
     Ok(())
 }
 
